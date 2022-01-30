@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleap.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Services Page</title>
+</head>
+<body>
+  <h1>This are the services provided by Dattatray</h1>
+  
+  <!-- Going to bring footer here -->
+  <!--if we use replace then HostTag replace by fragment tag
+  
+      if we use insert tag fragment tag insert in host tag
+      if we use include tag then only fragment content add in host tag  -->
+  <footer id="HostTag" th:replace="footer::footer1(${title},${subtitle})">
+  
+  </footer>
+</body>
+</html> 

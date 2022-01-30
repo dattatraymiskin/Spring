@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>ThymeLeaf</title>
+</head>
+<body>
+    <h1>Simple Variable</h1>
+   <div>Name : <span th:text="${myEmp.name}" >ABC</span></div> 
+   <div>Mobile : <span th:text="${myEmp.mob}" >00</span></div> 
+   <br>
+   <br>
+   
+    <h1>Selection Variable</h1>
+	<div th:object="${myEmp}">
+		<p>Name : <span th:text="*{name}">ABC</span><br>
+		 Mobile : <span th:text="*{mob}">00</span></p>
+	</div>
+</body>
+</html>

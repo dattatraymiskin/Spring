@@ -1,0 +1,16 @@
+body {
+	background: navy;
+}
+
+.container {
+	background: #ffffff;
+	padding: 20px;
+	font-family: serif;
+}
+
+.profile {
+	width: 10%;
+	height: 10%;
+	object-fit: contain;
+	border-radius: 50%;
+}

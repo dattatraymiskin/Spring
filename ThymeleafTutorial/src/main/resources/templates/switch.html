@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>ThymeLeaf</title>
+</head>
+<body>
+    <h1>Switch Cases</h1>
+    
+    <div th:switch="${emp1.name}">
+       <p th:case="Riya">Hello Riya</p>
+       <p th:case="Sneha">Hello Sneha</p>
+       <p th:case="yaman">Hello yaman</p>
+       <p th:case="Datta">Hello Datta</p>
+       <p th:case="*">Default Case</p>
+       
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>ThymeLeaf</title>
+</head>
+<body>
+ <h1>Conditional Expression</h1>
+    <h1>If Then</h1>
+  <div th:text="${emp1.salary > 20000} ? 'Great'"></div>
+  <div th:text="${emp1.salary > 50000} ? 'Failed'">
+  
+  </div>
+  <h2>If-Then-Else</h2>
+  <div th:text="${emp1.salary > 20000} ? 'Great' : 'Fine' "></div>
+  <div th:text="${emp1.salary > 50000} ? 'Hi' : 'Bye' "></div>
+  
+  <h2>If-Unless</h2>
+   <div th:if="${emp1.salary > 20000}">Condition true then print</div>
+   <div th:if="not ${emp1.salary > 50000}">/if false then print (as like if else)</div>
+  <div th:unless="${emp1.salary > 20000}">Condition False then print</div>
+  
+</body>
+</html>

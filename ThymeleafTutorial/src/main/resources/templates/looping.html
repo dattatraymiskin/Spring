@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>ThymeLeaf</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Looping</h1>
+     <table class="table caption-top">
+  <caption>List of Employees</caption>
+  <thead>
+    <tr>
+      <th scope="col">Sr.No.</th>
+      <th scope="col">Name</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+   <!--  <tr th:each="emp,itr : ${empList}"> -->
+     <!--  <th scope="row" th:text="${itr.index+1}">1</th> -->
+     <tr th:each="emp : ${empList}">
+      <th scope="row" th:text="${empStat.index+1}">1</th>
+      <td th:text="${emp.name}">Mark</td>
+      <td th:text="${emp.mob}">0000</td>
+      <td th:text="${emp.salary}">11111</td>
+    </tr>
+  </tbody>
+</table>
+  
+</body>
+</html>
